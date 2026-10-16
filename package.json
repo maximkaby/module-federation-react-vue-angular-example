@@ -1,0 +1,26 @@
+{
+  "name": "module-federation-vite-react",
+  "version": "1.0.0",
+  "description": "Module Federation with Vite: a React host with React, Vue and Angular remotes",
+  "scripts": {
+    "install:deps": "pnpm --filter './*' install",
+    "postinstall:deps": "pnpm --filter './*' run build",
+    "dev": "pnpm --parallel --filter './*' dev",
+    "build": "pnpm --filter './*' build",
+    "preview": "pnpm --parallel --filter './*' preview"
+  },
+  "author": {
+    "name": "Max Ivanov",
+    "email": "maximkabyit@gmail.com"
+  },
+  "license": "ISC",
+  "pnpm": {
+    "packageExtensions": {
+      "@analogjs/vite-plugin-angular": {
+        "peerDependencies": {
+          "vite": "*"
+        }
+      }
+    }
+  }
+}

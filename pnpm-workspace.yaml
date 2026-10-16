@@ -1,0 +1,6 @@
+packages:
+  - host
+  - remote-react1
+  - remote-react2
+  - remote-vue
+  - remote-ang

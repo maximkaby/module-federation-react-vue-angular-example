@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.json",
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "playwright.config.*",
+    "module-federation/esBuildAdapter.ts"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "types": ["node"]
+  }
+}
